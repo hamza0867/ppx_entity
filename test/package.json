@@ -1,0 +1,44 @@
+{
+  "name": "test",
+  "version": "0.0.0",
+  "description": "My Project",
+  "esy": {
+    "build": "dune build -p <PACKAGE_NAME>",
+    "buildDev": "pesy",
+    "release": {
+      "releasedBinaries": [
+        "TestApp.exe"
+      ]
+    },
+    "preprocess": [
+      "pps",
+      "ppx_entity"
+    ]
+  },
+  "buildDirs": {
+    "executable": {
+      "main": "TestApp",
+      "name": "TestApp.exe"
+    }
+  },
+  "scripts": {
+    "pesy": "bash -c 'env PESY_MODE=update pesy'",
+    "test": "esy x TestTest.exe"
+  },
+  "dependencies": {
+    "@opam/dune": "2.6.0",
+    "@esy-ocaml/reason": "*",
+    "ocaml": "4.10.0",
+    "ppx_entity": "*"
+  },
+  "devDependencies": {
+    "ocaml": "4.10.0",
+    "refmterr": "*",
+    "pesy": "*",
+    "@opam/merlin": "*",
+    "@opam/ocaml-lsp-server": "ocaml/ocaml-lsp:ocaml-lsp-server.opam"
+  },
+  "resolutions": {
+    "ppx_entity": "link-dev:.."
+  }
+}
