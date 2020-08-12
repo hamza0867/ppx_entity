@@ -7,7 +7,7 @@ let expand = (~ctxt, structure: Ppxlib__.Import.structure) => {
 
 let my_extension =
   Extension.V3.declare(
-    "reweb_entity",
+    "reweb.entity",
     Extension.Context.module_expr,
     Ast_pattern.(pstr(__)),
     expand,
@@ -15,4 +15,4 @@ let my_extension =
 
 let rule = Ppxlib.Context_free.Rule.extension(my_extension);
 
-let () = Driver.register_transformation(~rules=[rule], "reweb_entity");
+let () = Driver.register_transformation(~rules=[rule], "reweb.entity");

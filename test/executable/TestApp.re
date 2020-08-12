@@ -1,1 +1,1 @@
-module A = [%reweb_entity type t = {a: int}];
+module A = [%reweb.entity type t = {a: int}];
