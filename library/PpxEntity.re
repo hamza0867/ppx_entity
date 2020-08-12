@@ -1,8 +1,13 @@
 open Ppxlib;
 
-let expand = (~ctxt, structure: Ppxlib__.Import.structure) => {
+let expand = (~ctxt, structure) => {
   let loc = Expansion_context.Extension.extension_point_loc(ctxt);
-  Ast_builder.Default.pmod_structure(loc, structure);
+  let item =
+    switch (structure) {
+    | [hd, ..._] => hd
+    | [] => Location.raise_errorf(~loc, "This module is empty")
+    };
+  Ast_builder.Default.pmod_structure(loc, [item]);
 };
 
 let my_extension =
