@@ -9,16 +9,16 @@
       "releasedBinaries": [
         "TestApp.exe"
       ]
-    },
-    "preprocess": [
-      "pps",
-      "ppx_entity"
-    ]
+    }
   },
   "buildDirs": {
     "executable": {
       "main": "TestApp",
-      "name": "TestApp.exe"
+      "name": "TestApp.exe",
+      "preprocess": [
+        "pps",
+        "ppx_entity.lib"
+      ]
     }
   },
   "scripts": {

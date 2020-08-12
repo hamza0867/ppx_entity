@@ -7,4 +7,5 @@
    (name TestApp)  ;  From package.json main field
    ; The name of the executable (runnable via esy x TestApp.exe) 
    (public_name TestApp.exe)  ;  From package.json name field
+   (preprocess ( pps ppx_entity.lib ))  ; From package.json preprocess field
 )
