@@ -21,9 +21,6 @@ ppx_entity@0.0.0
 
 ```
 
-This library is supposed to be a ppx that accepts a module expression and returns that same module expression.  
-I wanted to try the library in the test folder ( which is an esy pesy project itself ) but it is not working (i.e: compiling) for some reason
-
 ## Developing:
 
 ```
