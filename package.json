@@ -11,7 +11,9 @@
       "require": "ppxlib",
       "namespace": "PpxEntity",
       "name": "ppx_entity.lib",
-      "kind": "ppx_rewriter",
+      "rawBuildConfig": [
+        "(kind ppx_rewriter)"
+      ],
       "preprocess": [
         "pps",
         "ppxlib.metaquot"
@@ -35,4 +37,3 @@
     "@opam/ocaml-lsp-server": "ocaml/ocaml-lsp:ocaml-lsp-server.opam"
   }
 }
-
