@@ -2,30 +2,22 @@
   "name": "ppx_entity",
   "version": "0.0.0",
   "description": "My Project",
-  "esy": {
-    "build": "dune build -p <PACKAGE_NAME>",
-    "buildDev": "pesy"
-  },
+  "esy": { "build": "dune build -p <PACKAGE_NAME>", "buildDev": "pesy" },
   "buildDirs": {
     "library": {
       "require": "ppxlib",
       "namespace": "PpxEntity",
       "name": "ppx_entity.lib",
-      "rawBuildConfig": [
-        "(kind ppx_rewriter)"
-      ],
-      "preprocess": [
-        "pps",
-        "ppxlib.metaquot"
-      ]
+      "rawBuildConfig": [ "(kind ppx_rewriter)" ],
+      "preprocess": [ "pps", "ppxlib.metaquot" ]
     }
   },
-  "scripts": {
-    "pesy": "bash -c 'env PESY_MODE=update pesy'"
-  },
+  "scripts": { "pesy": "bash -c 'env PESY_MODE=update pesy'" },
   "dependencies": {
     "@esy-ocaml/reason": "*",
     "@opam/dune": "2.6.0",
+    "@opam/ppx_deriving": "4.5",
+    "@opam/ppx_deriving_yojson": "3.5.3",
     "@opam/ppxlib": "0.14.0",
     "ocaml": "4.10.0"
   },

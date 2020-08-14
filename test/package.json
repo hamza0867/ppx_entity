@@ -15,9 +15,13 @@
     "executable": {
       "main": "TestApp",
       "name": "TestApp.exe",
+      "require": [
+        "ppx_deriving_yojson.runtime"
+      ],
       "preprocess": [
         "pps",
-        "ppx_entity.lib"
+        "ppx_entity.lib",
+        "ppx_deriving_yojson"
       ]
     }
   },
@@ -26,8 +30,10 @@
     "test": "esy x TestTest.exe"
   },
   "dependencies": {
-    "@opam/dune": "2.6.0",
     "@esy-ocaml/reason": "*",
+    "@opam/dune": "2.6.0",
+    "@opam/ppx_deriving": "4.5",
+    "@opam/ppx_deriving_yojson": "3.5.3",
     "ocaml": "4.10.0",
     "ppx_entity": "*"
   },
@@ -42,3 +48,4 @@
     "ppx_entity": "link-dev:.."
   }
 }
+
