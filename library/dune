@@ -7,7 +7,8 @@
    (name PpxEntity)
    ; Other libraries list this name in their package.json 'require' field to use this library.
    (public_name ppx_entity.lib)
-   (libraries  ppxlib )
+   (libraries  ppxlib base )
+   (flags ( -open Base ))  ; From package.json flags field
    
  (kind ppx_rewriter) 
    (preprocess ( pps ppxlib.metaquot ))  ; From package.json preprocess field

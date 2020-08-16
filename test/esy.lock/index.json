@@ -1,5 +1,5 @@
 {
-  "checksum": "d3cf4b65a4c8826390a7dbd8f98e9ea0",
+  "checksum": "bcc3b2980427695548e9546d2715e7fa",
   "root": "test@link-dev:./package.json",
   "node": {
     "test@link-dev:./package.json": {
@@ -55,7 +55,8 @@
         "ocaml@4.10.0@d41d8cd9", "@opam/ppxlib@opam:0.14.0@f5ad0360",
         "@opam/ppx_deriving_yojson@opam:3.5.3@253e094d",
         "@opam/ppx_deriving@opam:4.5@d89f2934",
-        "@opam/dune@opam:2.6.0@c20056ec", "@esy-ocaml/reason@3.6.0@d41d8cd9"
+        "@opam/dune@opam:2.6.0@c20056ec", "@opam/base@opam:v0.14.0@b8817fc1",
+        "@esy-ocaml/reason@3.6.0@d41d8cd9"
       ],
       "devDependencies": [
         "refmterr@3.3.2@d41d8cd9", "pesy@0.4.4@d41d8cd9",
@@ -154,8 +155,8 @@
         "@opam/dune@opam:2.6.0@c20056ec", "@opam/biniou@opam:1.2.1@d7570399"
       ]
     },
-    "@opam/stdlib-shims@opam:0.1.0@d957c903": {
-      "id": "@opam/stdlib-shims@opam:0.1.0@d957c903",
+    "@opam/stdlib-shims@opam:0.1.0@8c116481": {
+      "id": "@opam/stdlib-shims@opam:0.1.0@8c116481",
       "name": "@opam/stdlib-shims",
       "version": "opam:0.1.0",
       "source": {
@@ -637,7 +638,7 @@
       "overrides": [],
       "dependencies": [
         "ocaml@4.10.0@d41d8cd9", "@opam/yojson@opam:1.7.0@7056d985",
-        "@opam/stdlib-shims@opam:0.1.0@d957c903",
+        "@opam/stdlib-shims@opam:0.1.0@8c116481",
         "@opam/ppx_yojson_conv_lib@opam:v0.14.0@116b53d6",
         "@opam/ocamlfind@opam:1.8.1@ff07b0f9",
         "@opam/menhir@opam:20200624@8629ff13",
@@ -646,7 +647,7 @@
       ],
       "devDependencies": [
         "ocaml@4.10.0@d41d8cd9", "@opam/yojson@opam:1.7.0@7056d985",
-        "@opam/stdlib-shims@opam:0.1.0@d957c903",
+        "@opam/stdlib-shims@opam:0.1.0@8c116481",
         "@opam/ppx_yojson_conv_lib@opam:v0.14.0@116b53d6",
         "@opam/ocamlfind@opam:1.8.1@ff07b0f9",
         "@opam/menhir@opam:20200624@8629ff13",
