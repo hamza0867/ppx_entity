@@ -29,7 +29,9 @@ let expand = (~ctxt, structure) => {
                      |> List.map(~f=label_declaration =>
                           {
                             ...label_declaration,
-                            pld_type: label_declaration.pld_type,
+                            pld_type: [%type:
+                              option([%t label_declaration.pld_type])
+                            ],
                           }
                         ),
                    )
