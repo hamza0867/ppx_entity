@@ -3,5 +3,10 @@ module A = [%reweb.entity
     a: int,
     b: string,
   };
-  type other = {c: option(string)}
+  type other = {x: bool};
+  let a = 5;
+  let b = true;
+  module X = {
+    let b = "new";
+  }
 ];
